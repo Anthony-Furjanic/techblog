@@ -1,8 +1,8 @@
-const router= require ("express").Router
+const router= require("express").Router()
 const apiroutes= require("./apis")
-const homeroutes= requre("./homeroutes.js")
+const homeroutes= require("./homeroutes.js")
 
-router.use("/api",apiroutes)
+// router.use("/apis",apiroutes)
 router.use("/",homeroutes)
 router.use((req,res)=>{
     res.status(404).end()
